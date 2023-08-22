@@ -1,0 +1,15 @@
+/home/iconex/Área de Trabalho/curso_C#/bin/Debug/net6.0/curso_C#
+/home/iconex/Área de Trabalho/curso_C#/bin/Debug/net6.0/curso_C#.deps.json
+/home/iconex/Área de Trabalho/curso_C#/bin/Debug/net6.0/curso_C#.runtimeconfig.json
+/home/iconex/Área de Trabalho/curso_C#/bin/Debug/net6.0/curso_C#.dll
+/home/iconex/Área de Trabalho/curso_C#/bin/Debug/net6.0/ref/curso_C#.dll
+/home/iconex/Área de Trabalho/curso_C#/bin/Debug/net6.0/curso_C#.pdb
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.csproj.AssemblyReference.cache
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.GeneratedMSBuildEditorConfig.editorconfig
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.AssemblyInfoInputs.cache
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.AssemblyInfo.cs
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.csproj.CoreCompileInputs.cache
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.dll
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/ref/curso_C#.dll
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.pdb
+/home/iconex/Área de Trabalho/curso_C#/obj/Debug/net6.0/curso_C#.genruntimeconfig.cache
