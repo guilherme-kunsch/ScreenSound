@@ -2,7 +2,7 @@
 // List<string> registeredBands = new List<string> { "The Beatles", "U2", "ACDC" };
 
 Dictionary<string, List<int>> dictionaryBands = new Dictionary<string, List<int>>();
-dictionaryBands.Add("Link Park", new List<int>{10, 8, 6});
+dictionaryBands.Add("Linkin Park", new List<int>{10, 8, 6});
 dictionaryBands.Add("The Beatles", new List<int>());
 
 
@@ -43,6 +43,9 @@ void OptionsMenu()
       break;
     case 3: 
       BandNotes();
+      break;
+    case 4:
+      MediaBand();
       break;
   }
 }
@@ -86,19 +89,53 @@ void BandNotes()
 {
   Console.Clear();
   DisplayTitle("Avaliação das bandas!");
-  Console.Write("Digite o nome da banda que deseja avaliar: \n");
+  Console.Write("Digite o nome da banda que deseja avaliar: ");
   string ratedBand = Console.ReadLine()!;
 
   if (dictionaryBands.ContainsKey(ratedBand))
   {
-
+    Console.Write($"Qual a nota que a {ratedBand} merece: ");
+    int note = int.Parse(Console.ReadLine()!);
+    dictionaryBands[ratedBand].Add(note);
+    Console.WriteLine($"\nA nota {note} foi registrada com sucesso para banda {ratedBand}.");
+    Thread.Sleep(4000);
+    Console.Clear();
+    OptionsMenu();
   } else
   {
-    Console.WriteLine($"A banda {ratedBand} não encontrada!");
+    Console.WriteLine($"\nA banda {ratedBand} não encontrada!");
     Console.WriteLine("Digite uma tecla para voltar ao menu principal.");
     Console.ReadKey();
     Console.Clear();
     OptionsMenu();
   }
+}
+
+
+void MediaBand() 
+{
+  Console.Clear();
+  DisplayTitle("Média das Bandas");
+  Console.Write("Qual banda deseja exibir a média? ");
+  string bandReview = Console.ReadLine()!;
+
+  if(dictionaryBands.ContainsKey(bandReview))
+  {
+    List<int> media = dictionaryBands[bandReview];
+
+    Console.WriteLine($"\nA média da banda {bandReview} foi: {media.Average()}.");
+    Console.Write("Digite qualquer tecla para voltar ao menu principal: ");
+    Console.ReadKey();
+    OptionsMenu();
+    
+  } else
+  {
+    Console.WriteLine($"A banda {bandReview} não está registrada!");
+    Console.Write("Digite qualquer tecla para voltar ao menu principal: ");
+    Console.ReadKey();
+    OptionsMenu();
+  }
+
+
 }
 OptionsMenu();
